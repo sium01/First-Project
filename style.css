@@ -1,1 +1,338 @@
-# First-Project
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container {
+width: 100%;
+height: 100vh;
+}
+a{
+    text-decoration: none;
+}
+.logo{
+    position: absolute;
+    left: 90px;
+    top: 50px;
+}
+.logo a{
+    text-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+    font-weight: bold;
+    color: #2f2e41;
+    font-size:2rem;
+    letter-spacing: 1;
+}
+.Searcharea{
+position: fixed;
+right: 90px;
+top: 50px;
+width: 170px;
+height: 45px;
+background-color: #ffff;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 10% 10% 10% 10% / 50% 50% 50% 50%;
+box-shadow: 2px 2px 30px rgba(167,158,245,0.2);
+box-sizing: border-box;
+z-index: 1;
+border: 1px solid rgba(167,158, 245,0.1);
+}
+.searchbox input{
+    width: 90px;
+    height: 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #1f1f1f;
+    font-size: 1rem;
+    padding: 0px 10px;
+}
+.searchbox input::placeholder{
+    color: #1d1d1d;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+    font-family: poppins;
+}
+.section1{
+position: absolute;
+left: 15%;
+top: 50%;
+transform: translate(-15%,50%);
+}
+.section1 img{
+    height: 170px;
+}
+.sectionbutton{
+    position: absolute;
+    top: 50%;
+    left: 90%;
+    transform: translate(-90%,-50%)
+}
+    .sectionbutton h1, h2{
+        font-family: Roboto;
+        font-weight: bold;
+        margin: 0px;
+        line-height:60px;
+        font-size: 4rem;
+        text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+        letter-spacing: 3px;
+        color: #3d3d4a;
+        text-transform: uppercase;
+    }
+    span{
+        color: brown;
+
+    }
+.sectionbutton h1{
+    letter-spacing: 20px;
+}
+.btn{
+width: 150px;
+height: 40px;
+background-color: #2f2e41;
+box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 10% 10% 10% 10% / 50% 50% 50% 50%;
+margin-top: 20px;
+color: #fff;
+font-family: calibri;
+font-weight: 600;
+letter-spacing: 0.5px;
+font-size: 1rem;
+outline: none;
+cursor: pointer;
+border: transparent !important;
+
+}
+
+.btn:hover{
+    background-color: #6e64ff;
+color: #ffff;
+transition: all ease 0.5s;
+}
+.icon{
+    position: fixed;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 20px;
+    background-color: #FFFF;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+    padding: 5px 0px;
+    z-index: 1;
+}
+
+.icon a{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 15px;
+background-color: yellowgreen;
+}
+.icon a i{
+    color: rgba(39,39,39,0.80);
+}
+.icon a:hover .fa-facebook{
+color: blue;
+}
+.icon a:hover .fa-twitter{
+    color: aqua;
+}
+.icon a:hover .fa-instagram{
+    color: pink;
+}
+.icon a:hover .fa-youtube{
+    color: red;
+}
+.productsection{
+width: 85%;
+background-color: #fafafa;
+box-shadow: 2px 2px 30px rgba(167,158,245,0.2);
+display: flex;
+margin: 30px auto;
+flex-direction: column;
+align-items: center;
+padding: 40px 20px;
+margin-top: -60px;
+position: relative;
+background-size: 1000px;
+border-radius: 10px;
+}
+.productsection > h3{
+    margin: 20px;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.05);
+    font-family: myriad pro;
+    font-weight: 700;
+    letter-spacing: 20px;
+    text-align: center;
+    font-size: 2rem;
+    color: #323543;
+}
+.product{
+    display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+margin: 10px 0px;
+width: 100%;
+
+}
+.productbox{
+    width: 250px;
+    height: 330px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    margin: 10px 30px;
+}
+.productbox img{
+    height: 180px;
+}
+.productbox p{
+    color: #4d3d3d70;
+    font-family: myriad pro;
+    font-size: 0.9rem;
+    letter-spacing: 0.5;
+}
+.productbox a{
+    color: #2c2c2c;
+    font-family: poppins;
+    font-size: 1rem;
+}
+.Buybtn{
+    position: absolute;
+    width: 140px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    font-family: calibri;
+    left: 50%;
+    bottom: -20px;
+    transform: translateX(-50%);
+    border-radius: 10% 10% 10% 10% / 50% 50% 50% 50%;
+    background:linear-gradient(120deg,#ec088d 20%, #a166f4);
+    color:#d89a9a;
+    display: none;
+    animation: fade 0.2s;
+}
+.productbox:hover .Buybtn{
+    display: flex;
+}
+.productbox:hover{
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+    background-color: #ffff;
+}
+.productbox:hover a:last-child{
+color: #f8f8f8;
+transition: all ease 0.9s;
+}
+.about{
+    display: flex;
+    width: 85%;
+    margin: 50px auto;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin-bottom: 150px !important;
+
+}
+.aboutbox{
+width: 40%;
+font-family: myriad pro;
+
+
+}
+.aboutbox img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+.aboutbox h1{
+    color: #333333;
+    font-size:3rem;
+    font-weight: 700;
+margin:0px;
+}
+.aboutbox h4{
+    color: #3333;
+font-weight: 400;
+font-weight: 2rem;
+margin-top: 10px;
+margin-bottom: 10px;
+       
+
+
+}
+.aboutbox p{
+    font-size: 1rem;
+    color: #bdbdbd;
+    letter-spacing: 0.5px;
+}
+.notification{
+   width:100%;
+    height: 250px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.notification h3{
+    font-size: 2rem;
+    color: rgba(56, 56, 56);
+}
+.notificationinput{
+    width: 500px;
+    background-color: #fff;
+    border-radius: 7% 7% 7% 7% /50% 50% 50% 50%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 20px;
+    box-shadow: 2px 5px 30px rgba(0,0,0,0.1);
+    margin-top: 30px;
+}
+.notificationinput input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+
+}
+.notificationbutton{
+    width: 120px;
+    height: 40px;
+    background-color: #202020;
+    border-radius: 20px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+    font-size: 1rem;
+}
+.notificationbutton:hover{
+    background-color: #ec088d;
+    transition: all ease 0.8s;
+}
+footer{
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+
+}
+footer p{
+    text-align: center;
+    color:white;
+}
